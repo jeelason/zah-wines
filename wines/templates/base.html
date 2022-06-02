@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock title %} | Zah Wines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">    
+<body>
+    <header>
+        <div class="main-nav">
+            <!--winery name-->
+                <div class="title">
+                    <a href= {% url 'wine_home' %}><h1>Zah Wines</h1></a>
+                </div>
+            
+            <!--nav bar-->
+                <div class="topnav">
+                  <a href="{% url 'wine_list' %}">Wines</a>
+                  <a href="{% url 'about' %}">About</a>
+                  {% comment %} <a href="{% url 'consult' %}">Consult</a> {% endcomment %}
+                  <a href="{% url 'contact' %}">Contact</a>
+                </div>  
+            </div>	
+        </head>
+    </header>
+    <main>
+    {% block content %}
+    {% endblock content %}
+    </main>
+    <footer class="social">
+        <a href="https://www.instagram.com/zahwines" target="_blank">
+            <img src="{% static "images/glyph-instagram.png" %}" id="flip" alt="instagram">
+        </a>
+    </footer>
+    <div id="chicken">
+    <img src="{% static "images/chicken.gif" %}" alt="chicken">
+    </div>
+    
+    
+</body>
+
+</html>

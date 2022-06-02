@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Consultancy
+{% endblock title %}
+
+{% block content %}
+    <div class="home">
+    <img src="{% static "images/taste.jpeg" %}" id="soften" alt="vineyard">
+    </div>
+
+<p class="central">Zah Wines is also a distinctive wine consulting company specializing 
+    in small production, handcrafted high end wines - working collaboratively with their
+    clients who are dedicated to producing world-class wines. We offer sourcing of grapes and
+    provide winemaking from grapes to bottling with a successful winemaking style.</p>
+
+{% if submitted %}
+<p class="home">Thank you for your interest! We'll get back to you soon.</p>
+{% else %}
+    <div class="form">        
+        <p>Inquire below about starting your own wine label.</p>
+        <form method="post">
+            <table> 
+            {% csrf_token %}           
+            {{ form.as_table }}            
+                <tr>
+                    <td>&nbsp;</td>                    
+                </tr>
+            </table>            
+            <td><button class="button">Submit</button></td>
+        </form>        
+{% endif %}
+    </div>
+{% endblock content%}
+
+
+<p></p>

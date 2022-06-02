@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Wines
+{% endblock title %}
+
+{% block content %}
+    {% for wine in wine_list %}
+    <div class="detail">
+        <img src="{{ wine.image }}">
+        <h3 class="wine-title">{{ wine.year }} {{ wine.varietal }}</h3>
+        {% if wine.techsheet %}
+        <a href="{{ wine.techsheet }}">Tech Sheet</a>
+        {% endif %}
+        <p>{{ wine.location }}</p>        
+        <h3>Description</h3>        
+        <p>{{ wine.description }}</p>
+    </div>
+    {% endfor %}
+
+
+{% endblock content%}

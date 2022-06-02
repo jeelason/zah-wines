@@ -1,0 +1,222 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.home {
+    text-align: center;    
+}
+
+p.central {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+}
+
+.home img {    
+    width:45%;
+    height: auto; 
+ }
+
+ .home #soften {
+    position: relative;
+    display: inline-block;
+}
+.home #soften:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 10px 10px #ffffff;
+} 
+
+
+.form {    
+    display: grid; 
+    text-align: center;
+    padding:5px;      
+}
+
+
+.form h1{
+    text-transform: uppercase;
+    margin: auto;
+}
+
+
+button.button {
+    background-color: #1db318;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: white;
+    padding: 0.25em 1em;
+    text-transform: lowercase;    
+  }
+  
+button.button:hover {
+    background-color: white;
+    border-color: #e99bc4;
+    color: #e99bc4;
+  }
+  
+button.button:active {
+    background-color: #c93e91;
+  }
+
+
+.title h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 110px;
+    padding-bottom: 20px;
+    margin: 0;
+    letter-spacing: 10px;
+    
+}
+
+
+.title a {
+    text-align: center;
+    color: black; 
+    text-decoration: none;
+}
+
+.title a:hover{
+    color:#1faa1f;
+    
+}
+
+.topnav {
+    text-align: center;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.topnav a {
+    color: rgba(31, 170, 31);
+    text-decoration: none;
+    display:inline-block;
+    width: 150px;
+    }
+
+ .topnav a:hover{
+     color:rgb(135, 146, 139);
+ }
+
+ .logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+   width:262px;
+   height: 378px;
+
+   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+     -o-animation: fadein 3s; /* Opera < 12.1 */
+        animation: fadein 3s;   
+ }
+ 
+ @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.detail {
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 5px;
+    padding: 40px;
+    margin: 30px;
+    
+
+}
+
+.detail > img {
+    object-fit: cover;    
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;    
+    grid-row: 1 / span 5;    
+}
+
+h5 {
+    text-align: center;
+}   
+
+
+.wines img {
+    margin-left:500px;
+    width: 10%; 
+    padding-left: 50px;
+    float:left;
+}
+
+.wine-title {
+    color:forestgreen;
+}
+
+
+.social img{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     height: 29px;
+     width: 29px;
+     padding: 30px;
+ } 
+
+ #flip:hover{    
+    filter: brightness(.2) invert(.55) sepia(.7) hue-rotate(66deg) saturate(450%);
+}
+
+table {
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    max-width: auto;
+    min-width: auto;
+    margin: auto;
+    
+  }
+
+#chicken {
+    position: relative;
+}
+
+#chicken img {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    max-width: 7%;
+
+}
+
+
