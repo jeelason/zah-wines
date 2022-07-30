@@ -185,8 +185,10 @@ textarea {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   column-gap: 5px;
-  padding: 40px;
-  margin: 30px;
+  margin: auto;
+  width: 65%;
+  padding: 20px;
+  
 }
 
 

@@ -14,8 +14,10 @@
         {% if wine.techsheet %}
         <a href="{{ wine.techsheet }}" id="tech">Tech Sheet</a>
         {% endif %}
-        {% if user.is_authenticated %}        
+        {% if user.is_authenticated %}      
+        <a role="link" aria-disabled="true" style="color: black">|</a>  
         <a href="{% url 'wine_edit' wine.id %}">Edit</a>
+        <a role="link" aria-disabled="true"style="color: black">|</a>
         <a href="{% url 'wine_delete' wine.id %}" id='delete'>Delete</a>        
         {%endif%}
         </div>
