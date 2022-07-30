@@ -34,3 +34,18 @@ class Consultant(models.Model):
 
     def __str__(self):
         return f'{self.full_name} + {self.email}'
+
+class Task(models.Model):
+    is_completed = models.BooleanField(default=False)
+    guest = models.ForeignKey(
+        "Contact",
+        related_name="guest",
+        on_delete=models.CASCADE,
+    )
+    client = models.ForeignKey(
+        "Consultant",
+        related_name="client",
+        on_delete=models.CASCADE,
+    )
+
+

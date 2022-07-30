@@ -7,7 +7,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 
 from wines.forms import ContactForm, ConsultForm
-from wines.models import Wine
+from wines.models import Consultant, Contact, Wine, Task
 
 
 class HomeListView(ListView):
@@ -37,7 +37,6 @@ class WineDeleteView(LoginRequiredMixin, DeleteView):
     fields = "__all__"
     success_url = reverse_lazy("wine_list")
 
-
 class WineUpdateView(LoginRequiredMixin, UpdateView):
     model = Wine
     template_name = "admin/edit.html"
@@ -48,6 +47,24 @@ class WineUpdateView(LoginRequiredMixin, UpdateView):
 class AboutView(ListView):
     model = Wine
     template_name = "wines/about.html"
+
+class InquiriesListView(LoginRequiredMixin, ListView):
+    model = Contact
+    template_name = "admin/inquiries.html"
+    context_object_name = 'contacts_list'
+    queryset = Contact.objects.all()
+
+    def get_context_data(self, **kwargs):
+        context = super(InquiriesListView, self).get_context_data(**kwargs)
+        context['consultants_list'] = Consultant.objects.all()
+        return context
+
+
+class TaskUpdateView(LoginRequiredMixin, UpdateView):
+    model = Task
+    template_name = "admin/complete.html"
+    fields = ["is_completed"]
+    success_url = reverse_lazy("inquiries")
 
 
 def contact(request):
