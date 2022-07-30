@@ -25,19 +25,17 @@ Minimalistc wine brand website displaying splash page, wine descriptions, custom
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 
-## Components
+## App Overview
 
-##App overview
-<br />
 <div align="center"><br />
-    <h3 align="center">Homepage</h3>
+    <h3 align="center">Homepage & wine detail list page</h3>
   <img src="" alt="animated" /><br />
-    <h3 align="center">Customer Submissions</h3>
+    <h3 align="center">Customer Submission forms</h3>
   <img src="" alt="animated" /><br />
     <h3 align="center">Admin functionality</h3>
   <img src="" alt="animated" /><br />
   </div>
 
-Wine detail list page
+
 
 Admin has access to queries and ability to add, update, remove tasks.
