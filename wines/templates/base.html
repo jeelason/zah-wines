@@ -9,6 +9,16 @@
 <body>
     <header>
         <div class="main-nav">
+            <!--admin access-->
+            <div class="topnav admin">            
+            {% if user.is_authenticated %}
+            <a href="{% url 'wine_create' %}">Create Wine</a>            
+            <a href="{% url 'wine_create' %}">Consults</a>
+            <a href="{% url 'wine_create' %}">Customers</a>
+            {% comment %} <a href="{% url 'logout' %}">Logout</a> {% endcomment %}
+            {%endif%}
+            </div>
+
             <!--winery name-->
                 <div class="title">
                     <a href= {% url 'wine_home' %}><h1>Zah Wines</h1></a>
@@ -18,7 +28,7 @@
                 <div class="topnav">
                   <a href="{% url 'wine_list' %}">Wines</a>
                   <a href="{% url 'about' %}">About</a>
-                  {% comment %} <a href="{% url 'consult' %}">Consult</a> {% endcomment %}
+                  <a href="{% url 'consult' %}">Consult</a>
                   <a href="{% url 'contact' %}">Contact</a>
                 </div>  
             </div>	
@@ -34,7 +44,9 @@
         </a>
     </footer>
     <div id="chicken">
-    <img src="{% static "images/chicken.gif" %}" alt="chicken">
+    <a href="{% url 'admin:index'%}">    
+        <img src="{% static "images/chicken.gif" %}" alt="chicken">
+    </a>
     </div>
     
     

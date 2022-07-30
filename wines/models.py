@@ -1,4 +1,3 @@
-from statistics import mode
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
@@ -23,11 +22,11 @@ class Contact(models.Model):
     def __str__(self):
         return self.fullname
 
-# class Consultant(models.Model):
-#     fullname = models.CharField(max_length=100)
-#     phone = models.CharField(max_length=15)
-#     email = models.EmailField()
-#     comment = models.TextField()
+class Consultant(models.Model):
+    fullname = models.CharField(max_length=100)
+    phone = models.CharField(max_length=15)
+    email = models.EmailField()
+    comment = models.TextField()
 
-#     def __str__(self):
-#         return self.fullname
+    def __str__(self):
+        return self.fullname
