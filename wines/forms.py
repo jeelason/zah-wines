@@ -7,6 +7,7 @@ class ContactForm(forms.ModelForm):
         model = Contact
         fields = "__all__"
 
+
 class ConsultForm(forms.ModelForm):
     class Meta:
         model = Consultant

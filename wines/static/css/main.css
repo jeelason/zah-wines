@@ -7,6 +7,7 @@ body {
 }
 
 p.central {
+  color: #394039;
   margin-left: auto;
   margin-right: auto;
   width: 40em;
@@ -39,6 +40,7 @@ p.central {
   display: grid;
   text-align: center;
   padding: 5px;
+  color: #394039
 }
 
 input {
@@ -187,8 +189,14 @@ textarea {
   column-gap: 5px;
   margin: auto;
   width: 65%;
-  padding: 20px;
-  
+  padding: 20px;  
+}
+
+.detail p {
+  color: #212421c9
+}
+.detail h4 {
+  color: #212421c9
 }
 
 

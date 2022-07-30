@@ -14,9 +14,11 @@ class HomeListView(ListView):
     model = Wine
     template_name = "wines/home.html"
 
+
 class WineListView(ListView):
     model = Wine
     template_name = "wines/wines.html"
+
 
 class WineCreateView(LoginRequiredMixin, CreateView):
     model = Wine
@@ -28,11 +30,13 @@ class WineCreateView(LoginRequiredMixin, CreateView):
     #     form.instance.user = self.request.user
     #     return super().form_valid(form)
 
+
 class WineDeleteView(LoginRequiredMixin, DeleteView):
     model = Wine
     template_name = "admin/delete.html"
     fields = "__all__"
     success_url = reverse_lazy("wine_list")
+
 
 class WineUpdateView(LoginRequiredMixin, UpdateView):
     model = Wine
@@ -44,19 +48,22 @@ class WineUpdateView(LoginRequiredMixin, UpdateView):
 class AboutView(ListView):
     model = Wine
     template_name = "wines/about.html"
-    
+
+
 def contact(request):
     submitted = False
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            return HttpResponseRedirect('?submitted=True')
+            return HttpResponseRedirect("?submitted=True")
     else:
         form = ContactForm()
-        if 'submitted' in request.GET:
-            submitted = True        
-        return render(request, 'wines/contact.html',{'form': form, 'submitted': submitted})
+        if "submitted" in request.GET:
+            submitted = True
+        return render(
+            request, "wines/contact.html", {"form": form, "submitted": submitted}
+        )
 
 
 def consult(request):
@@ -65,10 +72,11 @@ def consult(request):
         form = ConsultForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            return HttpResponseRedirect('?submitted=True')
+            return HttpResponseRedirect("?submitted=True")
     else:
         form = ConsultForm()
-        if 'submitted' in request.GET:
-            submitted = True        
-        return render(request, 'wines/consult.html',{'form': form, 'submitted': submitted})
-
+        if "submitted" in request.GET:
+            submitted = True
+        return render(
+            request, "wines/consult.html", {"form": form, "submitted": submitted}
+        )
