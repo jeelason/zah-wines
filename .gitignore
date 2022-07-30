@@ -10,3 +10,4 @@ venv.bak/
 *.py[cod]
 *$py.class
 .DS_Store
+*.sqlite3
