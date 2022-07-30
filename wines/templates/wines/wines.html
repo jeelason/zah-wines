@@ -11,8 +11,8 @@
         <img src="{{ wine.image }}">
         <h3 class="wine-title">{{ wine.year }} {{ wine.varietal }}</h3>
         <div = 'inline'>
-        {% if wine.techsheet %}
-        <a href="{{ wine.techsheet }}" id="tech">Tech Sheet</a>
+        {% if wine.tech_sheet %}
+        <a href="{{ wine.tech_sheet }}" id="tech">Tech Sheet</a>
         {% endif %}
         {% if user.is_authenticated %}      
         <a role="link" aria-disabled="true" style="color: black">|</a>  

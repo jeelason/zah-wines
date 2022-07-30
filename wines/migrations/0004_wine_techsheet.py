@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name="wine",
-            name="techsheet",
+            name="tech_sheet",
             field=models.URLField(blank=True),
         ),
     ]

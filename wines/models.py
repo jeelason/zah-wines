@@ -8,7 +8,7 @@ class Wine(models.Model):
     )
     varietal = models.CharField(max_length=75)
     location = models.CharField(max_length=70)
-    techsheet = models.URLField(blank=True)
+    tech_sheet = models.URLField(blank=True)
     description = models.TextField()
     image = models.URLField(null=True, blank=True)
 
@@ -17,20 +17,20 @@ class Wine(models.Model):
 
 
 class Contact(models.Model):
-    fullname = models.CharField(max_length=100)
+    full_name = models.CharField(max_length=100)
     phone = models.CharField(max_length=15)
     email = models.EmailField()
     comment = models.TextField()
 
     def __str__(self):
-        return self.fullname
+        return f'{self.full_name} + {self.email}'
 
 
 class Consultant(models.Model):
-    fullname = models.CharField(max_length=100)
+    full_name = models.CharField(max_length=100)
     phone = models.CharField(max_length=15)
     email = models.EmailField()
     comment = models.TextField()
 
     def __str__(self):
-        return self.fullname
+        return f'{self.full_name} + {self.email}'

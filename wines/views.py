@@ -55,6 +55,7 @@ def contact(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
+            form.save()
             cd = form.cleaned_data
             return HttpResponseRedirect("?submitted=True")
     else:
@@ -71,6 +72,7 @@ def consult(request):
     if request.method == "POST":
         form = ConsultForm(request.POST)
         if form.is_valid():
+            form.save()
             cd = form.cleaned_data
             return HttpResponseRedirect("?submitted=True")
     else:
