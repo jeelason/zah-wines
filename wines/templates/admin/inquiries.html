@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <div class='inquiry'>
+    <div id='inquiry'>
         <h1>Customer submissions</h1>
        {% if contacts_list|length <= 0 %}
              <p>You have no customer messages</p>
@@ -43,7 +43,7 @@
             </table>
             {% endif %}
     </div>
-    <div class='inquiry'>
+    <div id='inquiry'>
         <h1>Consult submissions</h1>
        {% if consultants_list|length <= 0 %}
             <p>You have no consultants messages</p>
