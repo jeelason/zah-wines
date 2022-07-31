@@ -1,12 +1,13 @@
 # Zah Wines
 
 ## Project description
-Minimalistc wine brand website displaying splash page, wine descriptions, consultant and contact inquiries. 
-Admin access allows for creating new wines to be view in wine list page with ability to edit and delete present wines.
+Minimalistc wine brand website displaying splash page, wine descriptions, consultant and contact inquiries.<br/>
+
+Admin access allows for creating new wines to be displayed in wine list page with ability to edit and delete present wines.<br/>
+
 Admin access also can view submissions and mark them as complete.
 
-
-login by clicking the Fried Chicken icon in the bottom right footer.
+Login by clicking the Fried Chicken icon in the bottom right footer.
 
 ## Technologies Used
 
@@ -30,28 +31,28 @@ login by clicking the Fried Chicken icon in the bottom right footer.
 
 ## Setup
 
-In your terminal, clone down repository and in root directory run create new python environment.<br />
+In your terminal, clone down repository and in root directory create new python environment.<br />
 `python -m venv .venv`
 
-activate the environment<br />
+Activate the environment<br />
 `source .venv/bin/activate`
 
-update pip<br />
+Update pip<br />
 `python -m pip install --upgrade pip`
 
-install requirements<br />
+Install requirements<br />
 `pip install -r requirements.txt`
 
 Run migrations<br />
 `python manage.py migrate`
 
-runserver<br />
+Runserver<br />
 `python manage.py runserver`
 
-create super user<br />
+Create super user<br />
 `python manage.py createsuperuser`
 
-in browser link <br />
+Access in browser <br />
 `http://localhost:8000`
 
 ## App Overview
