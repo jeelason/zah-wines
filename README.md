@@ -61,7 +61,7 @@ Access in browser <br />
     <h3 align="center">Homepage & wine detail list page</h3>
   <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-1.png" alt="homepage" width='40%'/>
   <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-2.png" alt="wine list" width='40%'/><br />
-    <h3 align="center">submit new wine while admin, guest submissions</h3>
+    <h3 align="center">submit new wine, guest submissions</h3>
   <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-3.png" alt="wine form" width='40%' />
     <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-4.png" alt="admin-tasks" width='40%' /><br />
     <h3 align="center">Admin functionality to view and mark inquiries as complete</h3>
