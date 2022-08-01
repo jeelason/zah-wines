@@ -26,8 +26,6 @@ Login by clicking the Fried Chicken icon in the bottom right footer.
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Sqlite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
-- Deployment: \
-![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 ## Setup
 
@@ -67,3 +65,4 @@ Access in browser <br />
     <h3 align="center">Admin functionality to view and mark inquiries as complete</h3>
     <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-5.png" alt="admin-tasks" width='40%' /><br />
   </div>
+   
